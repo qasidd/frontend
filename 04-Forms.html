@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- Organise information, user input -->
+    <!-- Method = how the information is passed -->
+    <!-- GET = arguemnts are appended to the URL of the request -->
+    <!-- POST = information is sent in the body of the request -->
+    <form action="" method="POST">
+        <label for="">Enter your username:</label>
+        <input type="text" name="username" required />
+        <br>
+        <label for="">Enter your password:</label>
+        <input type="password" name="pwd" />
+        <br>
+        <label for="">Enter your email:</label>
+        <input type="email" name="email" />
+        <br>
+        <label for="">Enter your phone:</label>
+        <input type="tel" name="tel" value="1234567890" pattern="[0-9]{11,13}" />
+        <br>
+        <label for="">URL of the company you work at:</label>
+        <input type="url" name="url">
+        <br>
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" id="male">Male</input>
+        <input type="radio" name="gender" id="female">Female</input>
+        <input type="radio" name="gender" id="pnts">Prefer not to say</input>
+        <br>
+        <label for="">What food do you like?</label>
+        <input type="checkbox" name="food" id="kfc">KFC</input>
+        <input type="checkbox" name="food" id="mcdonalds">McDonald's</input>
+        <input type="checkbox" name="food" id="pepes">Pepe's</input>
+        <br>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="IE">Internet Explorer</option>
+            <option value="FF">Firefox</option>
+            <option value="GC">Google Chrome</option>
+        </datalist>
+        <br>
+        <label for="">How old are you?</label>
+        <input type="number">
+        <br>
+        <label for="">DOB:</label>
+        <input type="date" id="date">
+        <br>
+        <label for="">Comments</label>
+        <textarea name="comments" cols="30" rows="10" maxlength="10"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset values</button>
+    </form>
+</body>
+
+</html>
