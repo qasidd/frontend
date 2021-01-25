@@ -1,0 +1,19 @@
+/* 
+ID = #
+Class = . 
+*/
+
+#name {
+    color: blueviolet;
+    background-color: chartreuse;
+}
+
+/* generic */
+.lorem {
+    font-size: 100px;
+}
+
+/* specific */
+p.lorem {
+    font-size: 30px;
+}
