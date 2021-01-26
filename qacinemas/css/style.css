@@ -1,0 +1,45 @@
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    border: 2px solid black;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+header * {
+    display: inline-block;
+}
+
+header h1 {
+    color: black;
+}
+
+header nav {
+    margin-left: 40px;
+}
+
+header nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav .current {
+    color: red;
+}
+
+main .text {
+    margin-top: 20px;
+    padding: 10px 5px 30px;
+    border: 2px solid black;
+}
+
+.text p {
+    padding: 0px;
+    margin: 5px 0px;
+}
