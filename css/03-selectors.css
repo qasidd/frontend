@@ -29,7 +29,7 @@ div > h1 {
     color: brown;
 }
 
-/* Adjacent selectors = all siblings of a selected element */
+/* Adjacent selectors = siblings next to a selected element */
 
 ol + p {
     color: red;
