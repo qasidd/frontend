@@ -45,7 +45,7 @@ let string = `5 + 3 = ${val}`;
 console.log(string); // 5 + 3 = 8
 
 console.log(`quote:"" single: ''`);
-console.log("quite:\"\" single: '' ");
+console.log("quote:\"\" single: '' ");
 
 // Data types = dynamic, runtime compiler doesn't know the type till the program is running
 let camelCase = "";
