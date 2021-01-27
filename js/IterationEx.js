@@ -18,8 +18,8 @@ for (let k = 1; k < 11; k++) {
 }
 
 // 5
-let day = new Date();
-switch(day.getDay()) {
+let now = new Date();
+switch(now.getDay()) {
     case 0:
         console.log(`Sunday`);
         break;
