@@ -4,6 +4,8 @@ const NUMBER_1 = document.querySelector("#firstNumber");
 const NUMBER_2 = document.querySelector("#secondNumber");
 const RESULT = document.querySelector("#result");
 const SUBTRACT_BUTTON = document.querySelector("#sub");
+const MULTIPLY_BUTTON = document.querySelector("#mul");
+const DIVIDE_BUTTON = document.querySelector("#div");
 const HISTORY = document.querySelector(".history");
 const CLEAR_VALUES = document.querySelector("#clearValues");
 const CLEAR_HISTORY = document.querySelector("#clearHistory");
@@ -36,6 +38,7 @@ const add = () => {
     printValue(newResult);
     addToHistory(newResult, num1, num2, "+");
 }
+
 const subtract = () => {
     const [num1, num2] = getValues();
     const newResult = num1 - num2;
@@ -43,16 +46,32 @@ const subtract = () => {
     addToHistory(newResult, num1, num2, "-");
 }
 
+const multiply = () => {
+    const [num1, num2] = getValues();
+    const newResult = num1 * num2;
+    printValue(newResult);
+    addToHistory(newResult, num1, num2, "-");
+}
+
+const divide = () => {
+    const [num1, num2] = getValues();
+    const newResult = num1 / num2;
+    printValue(newResult);
+    addToHistory(newResult, num1, num2, "-");
+}
+
 // a way to associate a method with an event
 SUBTRACT_BUTTON.addEventListener("click", subtract);
+MULTIPLY_BUTTON.addEventListener("click", multiply);
+DIVIDE_BUTTON.addEventListener("click", divide);
+
 CLEAR_VALUES.addEventListener("click", () => {
     NUMBER_1.value = "";
     NUMBER_2.value = "";
     RESULT.value = "";
 })
+
 CLEAR_HISTORY.addEventListener("click", () => {
     HISTORY.innerHTML = "";
 })
-CLEAR_HISTORY.addEventListener("mouseover", () => {
-    CLEAR_HISTORY.className = "btn btn-info";
-})
+
